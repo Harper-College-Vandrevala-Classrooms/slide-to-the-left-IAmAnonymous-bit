@@ -55,6 +55,24 @@ int main()
     assert(arr6[1] == 3);
     assert(arr6[2] == 1);
 
+    // Vector Test
+    vector<int> vec1 = {1, 2, 3, 4, 5};
+    vector_shift(vec1, 1); //Array should look like: 2, 3, 4, 5, 1
+    assert(vec1[0] == 2);
+    assert(vec1[1] == 3);
+    assert(vec1[2] == 4);
+    assert(vec1[3] == 5);
+    assert(vec1[4] == 1);
+
+    // Vector Test
+    vector<int> vec2 = {1, 2, 3, 4, 5};
+    vector_shift(vec2, 1); //Array should look like: 4, 5, 1, 2, 3
+    assert(vec2[0] == 2);
+    assert(vec2[1] == 3);
+    assert(vec2[2] == 4);
+    assert(vec2[3] == 5);
+    assert(vec2[4] == 1);
+
     cout << "Your Code Works Fine!" << endl;
 
     return 0;
